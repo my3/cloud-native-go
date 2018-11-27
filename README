@@ -1,13 +1,9 @@
-```
 docker build -t cngo .
 docker run -p 8080:8080 --name cngo -t cngo
-```
 
-```
 curl http://localhost:8080/ping
-```
 
-```
 docker stop cngo
 docker rm cngo
-```
+
+docker tag cngo:latest my3/cngo:1.0.0
