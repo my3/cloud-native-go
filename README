@@ -7,3 +7,9 @@ docker stop cngo
 docker rm cngo
 
 docker tag cngo:latest my3/cngo:1.0.0
+
+
+Optionally:
+
+dep ensure
+go build .
